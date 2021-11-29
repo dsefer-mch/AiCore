@@ -1,8 +1,11 @@
-GIT:
-gs=git status
-ga=git add .
-gcm=git commit -m '
-mkfile=touch
-git-forest="git log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(black)[%cr]%C(reset)  %x09%C(black)%an: %s %C(reset)'"
-gsh=git show Head~    
-gsh1=git show HEAD~1
+alias la='ls -a'
+alias gs='git status'
+alias ga='git add . '
+alias gcm='git commit -m '
+alias mkfile='touch '
+alias git-forest="git log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(black)[%cr]%C(reset)  %x09%C(black)%an: %s %C(reset)'"
+alias gsh='git show HEAD~'
+alias gb='git branch'
+alias gswc='git switch -C '
+alias gbrdel='git branch -d '
+alias gsw='git switch'
