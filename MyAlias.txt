@@ -18,3 +18,4 @@ alias crm='conda remove'
 alias cact='conda activate '
 alias cdeact='conda deactivate '
 alias ali='tail -n 20 ~/.p10k.zsh'
+https://us02web.zoom.us/j/6887053942?pwd=VmlzRGdnTWFrLzRwcTJ5elgzUUtmdz09
