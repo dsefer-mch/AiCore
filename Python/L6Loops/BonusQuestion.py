@@ -25,4 +25,4 @@ for i in range(10,50):
         continue
     else:
         print(f'{i} is a prime number')
-        
+    
