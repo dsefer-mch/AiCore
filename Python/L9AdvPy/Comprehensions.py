@@ -8,6 +8,8 @@ create a list of dictionaries, each with a key called name, then use a list comp
 use the os module to create a nested list comprehension to list every file in the my_lib directory
 """
 
+import pathlib
+import os
 list = ['Hello', 'world']
 capital_list = ([word.upper() for word in list])
 print(capital_list)
@@ -24,5 +26,11 @@ print(dict_comp_inverse)
 list_of_dict = [{'name': 'Ivan'}, {'name': 'Harry'}, {'name': 'Matin'}, {
     'name': 'Ian'}, {'name': 'Ross'}, {'name': 'Nikol'}]
 
-comp_dict = [ {i : list_of_dict[i-1]['name']} for i in range(1,len(list_of_dict)+1) ]
+comp_dict = [{i: list_of_dict[i-1]['name']}
+             for i in range(1, len(list_of_dict)+1)]
 print(comp_dict)
+
+
+print(pathlib.Path().resolve())
+# can't find my_lib dir with which anywhere
+print(os.listdir('/home/mch/AiCore/GitHub/AiCore'))
