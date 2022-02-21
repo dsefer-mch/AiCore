@@ -9,9 +9,8 @@ import re
 import pandas as pd
 
 driver = webdriver.Chrome()
-
-driver.get("https://wotlkdb.com/")
 driver.maximize_window()
+driver.get("https://wotlkdb.com/")
 action = ActionChains(driver)
 action.move_to_element(driver.find_element_by_link_text('Database'))
 action.perform()
